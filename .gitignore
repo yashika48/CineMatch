@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# Data & large artifacts (do NOT commit these)
+ml-25m/
+*.zip
+*.csv
+# keep the small serving embeddings out of git if large; see README note below
+# backend/model/item_embeddings.npy
+
+# OS / editor
+.DS_Store
+.vscode/
+.env
+.env.local

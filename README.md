@@ -24,6 +24,14 @@ All models evaluated with **Recall@10** and **NDCG@10** on a **temporal split** 
 
 The two-tower model beats matrix factorization by **56%** on Recall@10.
 
+## Demo 
+<img width="1600" height="751" alt="WhatsApp Image 2026-07-09 at 12 51 57 AM" src="https://github.com/user-attachments/assets/e6a38e62-79d1-43f1-b40b-93f6224b6502" />
+
+<img width="1599" height="740" alt="WhatsApp Image 2026-07-09 at 12 53 01 AM" src="https://github.com/user-attachments/assets/78577adb-0bc1-4fd2-9b3b-d216f47f06ca" />
+
+<img width="1600" height="755" alt="WhatsApp Image 2026-07-09 at 12 53 41 AM" src="https://github.com/user-attachments/assets/641c259f-cbc0-4520-9a04-b9838a0d629b" />
+
+
 ## Architecture
 
 **Training pipeline** — how the models were built and evaluated:

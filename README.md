@@ -30,22 +30,22 @@ The two-tower model beats matrix factorization by **56%** on Recall@10.
 
 ```mermaid
 flowchart LR
-    A[MovieLens-25M<br/>25M ratings] --> B[Temporal split<br/>no leakage]
-    B --> C[Popularity<br/>baseline]
-    C --> D[Matrix<br/>factorization]
-    D --> E[Two-tower<br/>+ logQ]
-    E --> F[Recall@10 /<br/>NDCG@10]
+    A["MovieLens-25M (25M ratings)"] --> B["Temporal split (no leakage)"]
+    B --> C["Popularity baseline"]
+    C --> D["Matrix factorization"]
+    D --> E["Two-tower + logQ"]
+    E --> F["Recall at 10 and NDCG at 10"]
 ```
 
 **Serving pipeline** — how a recommendation is produced at request time:
 
 ```mermaid
 flowchart LR
-    U[User picks<br/>films they like] --> N[Next.js UI]
-    N --> API[FastAPI backend]
-    API --> T[Average liked-item<br/>embeddings → taste vector]
-    T --> K[Top-K nearest<br/>item embeddings]
-    K --> R[Ranked<br/>recommendations]
+    U["User picks films they like"] --> N["Next.js UI"]
+    N --> API["FastAPI backend"]
+    API --> T["Average embeddings into taste vector"]
+    T --> K["Top-K nearest items"]
+    K --> R["Ranked recommendations"]
     R --> N
 ```
 
